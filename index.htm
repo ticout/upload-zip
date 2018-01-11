@@ -13,7 +13,7 @@
 
               console.log(r.headers.get('content-type'));
           //    return r.json();
-          return r.headers.get('content-type').includes('json') ? r.json() : r.text()
+          return r.text();
       } ).
           then(r => {
               console.log(r);
